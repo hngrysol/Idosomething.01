@@ -3,63 +3,150 @@
     <head>
         <title> 책읽고쓰는 웹사이트 </title>
         <meta charset="uft-8">
+            <style>
+            a{
+                color:black;
+                text-decoration:none;
+                border-bottom: 2px dashed black;
+            }
+            .content{
+                border-left: 3px dashed gray;
+                
+                padding-right:300px;
+                padding-left:150px;
+                padding-top:50px;
+                padding-bottom:200px;
+            }
+            
+            .sidelist{
+                list-style:none;
+                color:black;
+                text-decoration:none;
+                border: 3px double gray;
+                padding:30px;          
+                margin-top:150px;
+                margin-right:50px;
+            }
+            
+            .bottomlist{
+                border:5px hidden; 
+                margin-left:250px;
+                
+            }
+            .title{
+                list-style:none;
+                border-bottom: 3px dashed gray;  
+                padding-left:150px;
+                padding-right:50px;
+                padding-top:70px;
+                padding-bottom:20px;
+               /* margin-left:50px;
+                margin-right:150px;*/
+                margin-bottom:0px;
+                margin-top:0px;
+            }
+             #middle{
+                display:grid;
+                grid-template-columns: 300px 1fr;
+                border-bottom:3px dashed gray;
+            }
+            #bottom{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+            
+            </style>
     </head>
     <body>
-        <h2>
-            <a href="https://www.instagram.com/dosomething.01/"
-               target="_blank" title="내 instagram 계정"> dosomething.01</a>의 책 읽고 쓰는 웹사이트
-        </h2>
-         <a href="index.html">메뉴로</a>
-        <ul>
-            <li><a href="one.html">설국</a></li>
-            <li><a href="two.html">인간실격</a></li>
-            <li><a href="three.html">노르웨이의 숲</a></li>
-            <li><a href="four.html">노인과 바다</a></li>
-            <li><a href="five.html">위대한 개츠비 </a></li>
-        </ul>
-        <h2>
-            노르웨이의 숲 -<a href="https://ko.wikipedia.org/wiki/%EB%AC%B4%EB%9D%BC%EC%B9%B4%EB%AF%B8_%ED%95%98%EB%A3%A8%ED%82%A4"
-                        target="_blank" title="작가소개">무라카미 하루키  </a>
-        </h2>
-        <img src="murakami.jpeg" width="20%"> <img src="5.jpg" width="40%"> <img src="6.jpg" width="60%">
-        <br> ‘내가 아는 거라고는 기즈키의 죽음으로 인해 <br>내 젊음의 기능 일부가 완전하고도 영원히 망가져 버린 것 같다는 것 뿐이었다. ‘   
-       <br>  · · ·<br> 
-"나를 기억해 줬으면 좋겠어. 내가 존재하고 이렇게 네 곁에 있었다는 걸 언제까지나 기억해 줄래?" <br>"물론 언제까지나 기억할 거야." '
-<br>- 무라카미 하루키, [노르웨이의 숲 (부제: 상실의 시대)]
-<p>
-     사람들에게 이 책은 원제인 ‘노르웨이의 숲’ 보다 ‘상실의 시대’ 라는 제목으로 더 널리 알려져있다. 많은 이들에게 책의 원래 제목으로 기억되기보다 ‘상실의 시대’로써 남아있는 까닭은, 이 책이 다루는 상실에 대한 공허함이 그만큼 독자들에게 와닿았기 때문일 것이다. 특히나 소설의 배경인 1960년대 후반 일본은 스무 살의 주인공 와타나베가 많은 것을 잃어버렸던, 그야말로 상실의 시대였다.
+        <ol class='title'>
+            <h2>   
+                  <li>
+                        <a href="https://www.instagram.com/dosomething.01/"
+                      target="_blank" title="내 instagram 계정"> dosomething.01</a>의 책 읽고 쓰는 웹사이트
+                  </li>
+            
+            </h2>
+        </ol>
+        
+        
+        <div id="middle">
+         
+            <ul>
+                <div class='sidelist'>
+                    <a href="index.html"><strong>메뉴로</strong></a>
+                    <li><br></li>
+                    <li><a href="one.html">설국</a></li>
+                    <li><a href="two.html">인간실격</a></li>
+                    <li><a href="three.html">노르웨이의 숲</a></li>
+                    <li><a href="four.html">노인과 바다</a></li>
+                    <li><a href="five.html">위대한 개츠비 </a></li>
+                </div>
+            </ul>
+            
+            <div class='content'>
+                    <h2>
+                        노르웨이의 숲 -<a href="https://ko.wikipedia.org/wiki/%EB%AC%B4%EB%9D%BC%EC%B9%B4%EB%AF%B8_%ED%95%98%EB%A3%A8%ED%82%A4"
+                                    target="_blank" title="작가소개">무라카미 하루키  </a>
+                    </h2>
+                            <img src="murakami.jpeg" width="20%"> <img src="5.jpg" width="40%"> <img src="6.jpg" width="60%">
+                            <br> ‘내가 아는 거라고는 기즈키의 죽음으로 인해 <br>내 젊음의 기능 일부가 완전하고도 영원히 망가져 버린 것 같다는 것 뿐이었다. ‘   
+                           <br>  · · ·<br> 
+                                "나를 기억해 줬으면 좋겠어. 내가 존재하고 이렇게 네 곁에 있었다는 걸 언제까지나 기억해 줄래?" <br>"물론 언제까지나 기억할 거야." '
+                                <br>- 무라카미 하루키, [노르웨이의 숲 (부제: 상실의 시대)]
+                            <p>
+                             사람들에게 이 책은 원제인 ‘노르웨이의 숲’ 보다 ‘상실의 시대’ 라는 제목으로 더 널리 알려져있다. 많은 이들에게 책의 원래 제목으로 기억되기보다 ‘상실의 시대’로써 남아있는 까닭은, 이 책이 다루는 상실에 대한 공허함이 그만큼 독자들에게 와닿았기 때문일 것이다. 특히나 소설의 배경인 1960년대 후반 일본은 스무 살의 주인공 와타나베가 많은 것을 잃어버렸던, 그야말로 상실의 시대였다.
 
-        </p>
-        <p>
-            어느 날 와타나베는 자살로 생을 마감한 자신의 옛 친구 기즈키의 여자친구 나오코를 전철에서 마주친다. 도쿄의 대학생이었던 둘은 서로를 친구삼아 매주 만나 이야기를 하며 지낸다. 하지만 겉모습은 멀쩡해보였던 나오코의 속은 어딘가 뒤틀려있는 상태였다. 와타나베는 상태가 나빠져 정신 요양원으로 사라져버린 그녀를 그리워하고 편지를 쓴다. 또한 그녀와는 정 반대로 생명력이 넘치는 미도리를 만나게 된다. 죽음과 그것이 남기고 간 것들 사이에서 그는 혼란을 느끼며 나오코가 잃어버린 것들을 원래대로 되찾아보려 애쓴다. 
+                            </p>
+                            <p>
+                                어느 날 와타나베는 자살로 생을 마감한 자신의 옛 친구 기즈키의 여자친구 나오코를 전철에서 마주친다. 도쿄의 대학생이었던 둘은 서로를 친구삼아 매주 만나 이야기를 하며 지낸다. 하지만 겉모습은 멀쩡해보였던 나오코의 속은 어딘가 뒤틀려있는 상태였다. 와타나베는 상태가 나빠져 정신 요양원으로 사라져버린 그녀를 그리워하고 편지를 쓴다. 또한 그녀와는 정 반대로 생명력이 넘치는 미도리를 만나게 된다. 죽음과 그것이 남기고 간 것들 사이에서 그는 혼란을 느끼며 나오코가 잃어버린 것들을 원래대로 되찾아보려 애쓴다. 
 
-        </p>
-        <P>
-             전에 온 가지에 덩굴이 감겨있는 나무를 본 적이 있다. 덩굴에 둘러싸인 채 땅속의 영양분을 모두 빼앗긴 채 힘없이 서있는 나무였다. 살아있다는 표현보다 그냥 서있다는 말이 더 어울렸다. 오랜만에 글을 쓰려 다시 읽어보니 나오코의 모습과 그 나무의 모습이 겹쳐보였다. 나오코는 살아있지만 살아있다고 말할 수 없었다. 이미 내면은 죽은 채로 껍데기만이 그 자리에 남아있었다. 사람은 살아가며 크고 작은 것들을 잃는다. 때로는 소중한 이의 죽음이라는 거대한 상실감이 넝쿨처럼 우릴 휘감는다.
+                            </p>
+                            <P>
+                                 전에 온 가지에 덩굴이 감겨있는 나무를 본 적이 있다. 덩굴에 둘러싸인 채 땅속의 영양분을 모두 빼앗긴 채 힘없이 서있는 나무였다. 살아있다는 표현보다 그냥 서있다는 말이 더 어울렸다. 오랜만에 글을 쓰려 다시 읽어보니 나오코의 모습과 그 나무의 모습이 겹쳐보였다. 나오코는 살아있지만 살아있다고 말할 수 없었다. 이미 내면은 죽은 채로 껍데기만이 그 자리에 남아있었다. 사람은 살아가며 크고 작은 것들을 잃는다. 때로는 소중한 이의 죽음이라는 거대한 상실감이 넝쿨처럼 우릴 휘감는다.
 
-        </P>
-<P>
-    
-               나오코는 살아있지만 살아있다고 말할 수 없었다. 소중한 이들의 죽음이 넝쿨에 되어 사로잡혀 이미 내면은 죽어버린 채 나오코의 껍데기만이 그 자리에 남아있었다. 와타나베가 아무리 애써도 멈춰버릴 수 없는 죽음이었을 것이다.
-        </P>
-        <p>
-            기즈키와 나오코가 그랬던 것처럼 우울증과 죽음은 순식간에 우리를 잡아챈다. 문득 내가 죽음과 가장 가까이 있었던, 18살이 떠올랐다. 안타깝게도 그때 느꼈던 불안과 죽음은 언제까지나 나를 끝까지 쫓아올 것이다. 죽음의 기억은 영원히 지워지지 않는다. 그럼에도 불구하고, 누군가는 잃어버린 것과 죽음들을 뒤로한 채 아픔의 상처와 방황을 겪으며 앞으로 나아간다. 상실을 뒤로한 채 현실을 살아간다.
- 
-        </p>
-        
-        
-        
-        
-        
-        
-       <br><br><br>   <a href="index.html">메뉴로</a>
-        <ul>
-            <li><a href="one.html">설국</a></li>
-            <li><a href="two.html">인간실격</a></li>
-            <li><a href="three.html">노르웨이의 숲</a></li>
-            <li><a href="four.html">노인과 바다</a></li>
-            <li><a href="five.html">위대한 개츠비 </a></li>
-        </ul>
-        <br><br><br>
+                            </P>
+                            <P>
+
+                                   나오코는 살아있지만 살아있다고 말할 수 없었다. 소중한 이들의 죽음이 넝쿨에 되어 사로잡혀 이미 내면은 죽어버린 채 나오코의 껍데기만이 그 자리에 남아있었다. 와타나베가 아무리 애써도 멈춰버릴 수 없는 죽음이었을 것이다.
+                            </P>
+                            <p>
+                                기즈키와 나오코가 그랬던 것처럼 우울증과 죽음은 순식간에 우리를 잡아챈다. 문득 내가 죽음과 가장 가까이 있었던, 18살이 떠올랐다. 안타깝게도 그때 느꼈던 불안과 죽음은 언제까지나 나를 끝까지 쫓아올 것이다. 죽음의 기억은 영원히 지워지지 않는다. 그럼에도 불구하고, 누군가는 잃어버린 것과 죽음들을 뒤로한 채 아픔의 상처와 방황을 겪으며 앞으로 나아간다. 상실을 뒤로한 채 현실을 살아간다.
+
+                            </p>
+            </div> 
+         </div>
+           <br><br><br>   
+         <h3>
+             내가 읽은 다른 책들 - 또는 <a href="index.html">메뉴로<br></a>
+        </h3><br><br>
+            <div id="bottom">
+                <div>
+                    <a href="one.html">
+                        <img src="sg.jpg" width="50%">
+                    </a>
+                </div>
+                <div>
+                    <a href="two.html">
+                        <img src="igs.jpg" width="50%">
+                    </a>
+                </div>
+                <div>
+                    <a href="three.html">
+                        <img src="nlw.jpg" width="50%">
+                    </a>
+                </div>
+                <div>
+                    <a href="four.html">
+                        <img src="nig.jpg" width="50%">
+                    </a>
+                </div>
+                <div>
+                    <a href="five.html">
+                        <img src="wdh.jpg" width="50%">
+                    </a>
+                </div>
+               
+            </div>     
+            <br><br><br>
     </body>
 </html>
